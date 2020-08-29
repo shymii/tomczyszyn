@@ -1,0 +1,88 @@
+main{
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.contact{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+.contact-title{
+    margin: auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.form{
+    width: 100%;
+}
+form{
+    background: #EFEFEF;
+    padding: 1em;
+    border-radius: .3em;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+label{
+    padding: 1em .4em 1em 0em;
+}
+input{
+    padding: .5em;
+    width: 60%;
+    height: 1.7em;
+    border-radius: .2em;
+    border: none;
+    border: 1px solid #ddd;
+}
+input:focus{
+    border: none;
+    border: 1px solid #01A0E2;
+}
+textarea{
+    border: none;
+    border: 1px solid #ddd;
+}
+textarea:focus{
+    border: none;
+    border: 1px solid #01A0E2;
+}
+button{
+    width: 30%;
+    margin: auto;
+    margin-top: 1em;
+    padding: .7em;
+    border: none;
+    border-radius: .2em;
+    background: #01A0E2;
+    transition: all .5s;
+}
+button:hover{
+    background: #8EC607;
+}
+
+footer{
+    margin-top: 14%;
+}
+
+@media (min-width: 768px){
+    .form{
+        width: 50%;
+        margin: auto;
+    }
+    main{
+        margin: 5% auto;
+    }
+}
+@media (min-width: 1200px){
+    .form{
+        width: 35%;
+    }
+    main{
+        margin: 2% auto;
+    }
+    .contact{
+        margin-bottom: 3%;
+    }
+}

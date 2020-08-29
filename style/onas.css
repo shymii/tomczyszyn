@@ -1,0 +1,51 @@
+main{
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+}
+.onas{
+    width: 100%;
+}
+.onas-title{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+}
+.onas-gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+.onas-gallery-title{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+}
+.onas-gallery-item{
+    max-height: 300px;
+    max-width: 100%;
+    align-self: center;
+    justify-self: center;
+}
+@media (min-width: 768px){
+    main{
+        margin-top: 5%;
+    }
+    .onas-gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+    .onas-gallery-title{
+        grid-column: 1/3;
+    }
+}
+@media (min-width: 1200px){
+    main{
+        margin-top: 3%;
+    }
+    .onas-gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .onas-gallery-title{
+        grid-column: 1/4;
+    }
+}
